@@ -1,0 +1,6 @@
+framework module Pods_LeroyMerlinAppTests {
+  umbrella header "Pods-LeroyMerlinAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39983B021EB605DD64A24470 /* Pods_LeroyMerlinApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A06CC7A506B6393AD7FC7C /* Pods_LeroyMerlinApp.framework */; };
+		5C18BB59262DFA5A00402F07 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18BB58262DFA5A00402F07 /* BottomBar.swift */; };
+		5C18BB5E262E0FEF00402F07 /* ViewForButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18BB5D262E0FEF00402F07 /* ViewForButtons.swift */; };
+		5CDB07B0262CBF4600304EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07AF262CBF4600304EBF /* AppDelegate.swift */; };
+		5CDB07B2262CBF4600304EBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07B1262CBF4600304EBF /* SceneDelegate.swift */; };
+		5CDB07B4262CBF4600304EBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07B3262CBF4600304EBF /* ViewController.swift */; };
+		5CDB07B7262CBF4600304EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDB07B5262CBF4600304EBF /* Main.storyboard */; };
+		5CDB07BA262CBF4600304EBF /* LeroyMerlinApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07B8262CBF4600304EBF /* LeroyMerlinApp.xcdatamodeld */; };
+		5CDB07BC262CBF4900304EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CDB07BB262CBF4900304EBF /* Assets.xcassets */; };
+		5CDB07BF262CBF4900304EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDB07BD262CBF4900304EBF /* LaunchScreen.storyboard */; };
+		5CDB07CA262CBF4900304EBF /* LeroyMerlinAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07C9262CBF4900304EBF /* LeroyMerlinAppTests.swift */; };
+		5CDB07D5262CBF4900304EBF /* LeroyMerlinAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07D4262CBF4900304EBF /* LeroyMerlinAppUITests.swift */; };
+		5CDB07E6262CC40F00304EBF /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07E5262CC40F00304EBF /* SearchField.swift */; };
+		5CDB07F6262CC8A700304EBF /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07F5262CC8A700304EBF /* SearchButton.swift */; };
+		5CDB0801262CDFD800304EBF /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB0800262CDFD800304EBF /* CustomCollectionView.swift */; };
+		5CDB0806262CE10A00304EBF /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB0805262CE10A00304EBF /* CustomCollectionViewCell.swift */; };
+		5CF76404262DF020007FFEFF /* SecondCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76403262DF020007FFEFF /* SecondCustomCollectionViewCell.swift */; };
+		5CF76409262DF05C007FFEFF /* SecondCustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76408262DF05C007FFEFF /* SecondCustomCollectionView.swift */; };
+		CCD60A2268CCF91571488BDE /* Pods_LeroyMerlinAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90B3D5A2128C848AED6174D /* Pods_LeroyMerlinAppTests.framework */; };
+		D993283EA5E1819285145730 /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D14B5794F2EAABF937D904E /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CDB07C6262CBF4900304EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CDB07A4262CBF4600304EBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CDB07AB262CBF4600304EBF;
+			remoteInfo = LeroyMerlinApp;
+		};
+		5CDB07D1262CBF4900304EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CDB07A4262CBF4600304EBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CDB07AB262CBF4600304EBF;
+			remoteInfo = LeroyMerlinApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D14B5794F2EAABF937D904E /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29BDC6BD174BC6ECD5B57343 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		59A06CC7A506B6393AD7FC7C /* Pods_LeroyMerlinApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeroyMerlinApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C18BB58262DFA5A00402F07 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		5C18BB5D262E0FEF00402F07 /* ViewForButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewForButtons.swift; sourceTree = "<group>"; };
+		5CDB07AC262CBF4600304EBF /* LeroyMerlinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeroyMerlinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDB07AF262CBF4600304EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CDB07B1262CBF4600304EBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5CDB07B3262CBF4600304EBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CDB07B6262CBF4600304EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CDB07B9262CBF4600304EBF /* LeroyMerlinApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeroyMerlinApp.xcdatamodel; sourceTree = "<group>"; };
+		5CDB07BB262CBF4900304EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CDB07BE262CBF4900304EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CDB07C0262CBF4900304EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CDB07C5262CBF4900304EBF /* LeroyMerlinAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeroyMerlinAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDB07C9262CBF4900304EBF /* LeroyMerlinAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeroyMerlinAppTests.swift; sourceTree = "<group>"; };
+		5CDB07CB262CBF4900304EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CDB07D0262CBF4900304EBF /* LeroyMerlinAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeroyMerlinAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDB07D4262CBF4900304EBF /* LeroyMerlinAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeroyMerlinAppUITests.swift; sourceTree = "<group>"; };
+		5CDB07D6262CBF4900304EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CDB07E5262CC40F00304EBF /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		5CDB07F5262CC8A700304EBF /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
+		5CDB0800262CDFD800304EBF /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		5CDB0805262CE10A00304EBF /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CF76403262DF020007FFEFF /* SecondCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CF76408262DF05C007FFEFF /* SecondCustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomCollectionView.swift; sourceTree = "<group>"; };
+		67BB4B22BB5CB2555078A286 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		99DB65018D440E6A0E0FC302 /* Pods-LeroyMerlinApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinApp.debug.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A706D19E05D3B735BB256B31 /* Pods-LeroyMerlinApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinApp.release.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp.release.xcconfig"; sourceTree = "<group>"; };
+		AB9F8D1D4812C5A332553A79 /* Pods-LeroyMerlinAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinAppTests.release.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinAppTests/Pods-LeroyMerlinAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B90B3D5A2128C848AED6174D /* Pods_LeroyMerlinAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeroyMerlinAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B6706B3225E4F955AEED63 /* Pods-LeroyMerlinAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinAppTests.debug.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinAppTests/Pods-LeroyMerlinAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CDB07A9262CBF4600304EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39983B021EB605DD64A24470 /* Pods_LeroyMerlinApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB07C2262CBF4900304EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD60A2268CCF91571488BDE /* Pods_LeroyMerlinAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB07CD262CBF4900304EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D993283EA5E1819285145730 /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CDB07A3262CBF4600304EBF = {
+			isa = PBXGroup;
+			children = (
+				5CDB07AE262CBF4600304EBF /* LeroyMerlinApp */,
+				5CDB07C8262CBF4900304EBF /* LeroyMerlinAppTests */,
+				5CDB07D3262CBF4900304EBF /* LeroyMerlinAppUITests */,
+				5CDB07AD262CBF4600304EBF /* Products */,
+				6B063BEE993B9CAA81B92C2D /* Pods */,
+				67AE032CBBEA362DC307419A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CDB07AD262CBF4600304EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB07AC262CBF4600304EBF /* LeroyMerlinApp.app */,
+				5CDB07C5262CBF4900304EBF /* LeroyMerlinAppTests.xctest */,
+				5CDB07D0262CBF4900304EBF /* LeroyMerlinAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CDB07AE262CBF4600304EBF /* LeroyMerlinApp */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB07E5262CC40F00304EBF /* SearchField.swift */,
+				5CDB07F5262CC8A700304EBF /* SearchButton.swift */,
+				5CDB07AF262CBF4600304EBF /* AppDelegate.swift */,
+				5CDB07B1262CBF4600304EBF /* SceneDelegate.swift */,
+				5CDB07B3262CBF4600304EBF /* ViewController.swift */,
+				5CDB07B5262CBF4600304EBF /* Main.storyboard */,
+				5CDB07BB262CBF4900304EBF /* Assets.xcassets */,
+				5CDB07BD262CBF4900304EBF /* LaunchScreen.storyboard */,
+				5CDB07C0262CBF4900304EBF /* Info.plist */,
+				5CDB07B8262CBF4600304EBF /* LeroyMerlinApp.xcdatamodeld */,
+				5CDB0800262CDFD800304EBF /* CustomCollectionView.swift */,
+				5CDB0805262CE10A00304EBF /* CustomCollectionViewCell.swift */,
+				5CF76403262DF020007FFEFF /* SecondCustomCollectionViewCell.swift */,
+				5CF76408262DF05C007FFEFF /* SecondCustomCollectionView.swift */,
+				5C18BB58262DFA5A00402F07 /* BottomBar.swift */,
+				5C18BB5D262E0FEF00402F07 /* ViewForButtons.swift */,
+			);
+			path = LeroyMerlinApp;
+			sourceTree = "<group>";
+		};
+		5CDB07C8262CBF4900304EBF /* LeroyMerlinAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB07C9262CBF4900304EBF /* LeroyMerlinAppTests.swift */,
+				5CDB07CB262CBF4900304EBF /* Info.plist */,
+			);
+			path = LeroyMerlinAppTests;
+			sourceTree = "<group>";
+		};
+		5CDB07D3262CBF4900304EBF /* LeroyMerlinAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB07D4262CBF4900304EBF /* LeroyMerlinAppUITests.swift */,
+				5CDB07D6262CBF4900304EBF /* Info.plist */,
+			);
+			path = LeroyMerlinAppUITests;
+			sourceTree = "<group>";
+		};
+		67AE032CBBEA362DC307419A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59A06CC7A506B6393AD7FC7C /* Pods_LeroyMerlinApp.framework */,
+				0D14B5794F2EAABF937D904E /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework */,
+				B90B3D5A2128C848AED6174D /* Pods_LeroyMerlinAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B063BEE993B9CAA81B92C2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99DB65018D440E6A0E0FC302 /* Pods-LeroyMerlinApp.debug.xcconfig */,
+				A706D19E05D3B735BB256B31 /* Pods-LeroyMerlinApp.release.xcconfig */,
+				29BDC6BD174BC6ECD5B57343 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig */,
+				67BB4B22BB5CB2555078A286 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig */,
+				D2B6706B3225E4F955AEED63 /* Pods-LeroyMerlinAppTests.debug.xcconfig */,
+				AB9F8D1D4812C5A332553A79 /* Pods-LeroyMerlinAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CDB07AB262CBF4600304EBF /* LeroyMerlinApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CDB07D9262CBF4900304EBF /* Build configuration list for PBXNativeTarget "LeroyMerlinApp" */;
+			buildPhases = (
+				B3E357D3AD33030E43EE5FA3 /* [CP] Check Pods Manifest.lock */,
+				5CDB07A8262CBF4600304EBF /* Sources */,
+				5CDB07A9262CBF4600304EBF /* Frameworks */,
+				5CDB07AA262CBF4600304EBF /* Resources */,
+				DF6EDADB45AD08E3108355F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeroyMerlinApp;
+			productName = LeroyMerlinApp;
+			productReference = 5CDB07AC262CBF4600304EBF /* LeroyMerlinApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CDB07C4262CBF4900304EBF /* LeroyMerlinAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CDB07DC262CBF4900304EBF /* Build configuration list for PBXNativeTarget "LeroyMerlinAppTests" */;
+			buildPhases = (
+				86D5CF0DD4ECAED9531E7638 /* [CP] Check Pods Manifest.lock */,
+				5CDB07C1262CBF4900304EBF /* Sources */,
+				5CDB07C2262CBF4900304EBF /* Frameworks */,
+				5CDB07C3262CBF4900304EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CDB07C7262CBF4900304EBF /* PBXTargetDependency */,
+			);
+			name = LeroyMerlinAppTests;
+			productName = LeroyMerlinAppTests;
+			productReference = 5CDB07C5262CBF4900304EBF /* LeroyMerlinAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CDB07CF262CBF4900304EBF /* LeroyMerlinAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CDB07DF262CBF4900304EBF /* Build configuration list for PBXNativeTarget "LeroyMerlinAppUITests" */;
+			buildPhases = (
+				4FD695E3ABCAD8A6022E180B /* [CP] Check Pods Manifest.lock */,
+				5CDB07CC262CBF4900304EBF /* Sources */,
+				5CDB07CD262CBF4900304EBF /* Frameworks */,
+				5CDB07CE262CBF4900304EBF /* Resources */,
+				D97151E02A221A15966DAF73 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CDB07D2262CBF4900304EBF /* PBXTargetDependency */,
+			);
+			name = LeroyMerlinAppUITests;
+			productName = LeroyMerlinAppUITests;
+			productReference = 5CDB07D0262CBF4900304EBF /* LeroyMerlinAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CDB07A4262CBF4600304EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5CDB07AB262CBF4600304EBF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5CDB07C4262CBF4900304EBF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5CDB07AB262CBF4600304EBF;
+					};
+					5CDB07CF262CBF4900304EBF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5CDB07AB262CBF4600304EBF;
+					};
+				};
+			};
+			buildConfigurationList = 5CDB07A7262CBF4600304EBF /* Build configuration list for PBXProject "LeroyMerlinApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CDB07A3262CBF4600304EBF;
+			productRefGroup = 5CDB07AD262CBF4600304EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CDB07AB262CBF4600304EBF /* LeroyMerlinApp */,
+				5CDB07C4262CBF4900304EBF /* LeroyMerlinAppTests */,
+				5CDB07CF262CBF4900304EBF /* LeroyMerlinAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CDB07AA262CBF4600304EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDB07BF262CBF4900304EBF /* LaunchScreen.storyboard in Resources */,
+				5CDB07BC262CBF4900304EBF /* Assets.xcassets in Resources */,
+				5CDB07B7262CBF4600304EBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB07C3262CBF4900304EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB07CE262CBF4900304EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FD695E3ABCAD8A6022E180B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeroyMerlinApp-LeroyMerlinAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D5CF0DD4ECAED9531E7638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeroyMerlinAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E357D3AD33030E43EE5FA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeroyMerlinApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97151E02A221A15966DAF73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6EDADB45AD08E3108355F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CDB07A8262CBF4600304EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C18BB5E262E0FEF00402F07 /* ViewForButtons.swift in Sources */,
+				5CDB07B4262CBF4600304EBF /* ViewController.swift in Sources */,
+				5CF76404262DF020007FFEFF /* SecondCustomCollectionViewCell.swift in Sources */,
+				5CF76409262DF05C007FFEFF /* SecondCustomCollectionView.swift in Sources */,
+				5CDB07E6262CC40F00304EBF /* SearchField.swift in Sources */,
+				5CDB07B0262CBF4600304EBF /* AppDelegate.swift in Sources */,
+				5CDB0806262CE10A00304EBF /* CustomCollectionViewCell.swift in Sources */,
+				5CDB07BA262CBF4600304EBF /* LeroyMerlinApp.xcdatamodeld in Sources */,
+				5CDB07B2262CBF4600304EBF /* SceneDelegate.swift in Sources */,
+				5C18BB59262DFA5A00402F07 /* BottomBar.swift in Sources */,
+				5CDB0801262CDFD800304EBF /* CustomCollectionView.swift in Sources */,
+				5CDB07F6262CC8A700304EBF /* SearchButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB07C1262CBF4900304EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDB07CA262CBF4900304EBF /* LeroyMerlinAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB07CC262CBF4900304EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDB07D5262CBF4900304EBF /* LeroyMerlinAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CDB07C7262CBF4900304EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CDB07AB262CBF4600304EBF /* LeroyMerlinApp */;
+			targetProxy = 5CDB07C6262CBF4900304EBF /* PBXContainerItemProxy */;
+		};
+		5CDB07D2262CBF4900304EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CDB07AB262CBF4600304EBF /* LeroyMerlinApp */;
+			targetProxy = 5CDB07D1262CBF4900304EBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CDB07B5262CBF4600304EBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDB07B6262CBF4600304EBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CDB07BD262CBF4900304EBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDB07BE262CBF4900304EBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CDB07D7262CBF4900304EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CDB07D8262CBF4900304EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CDB07DA262CBF4900304EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DB65018D440E6A0E0FC302 /* Pods-LeroyMerlinApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeroyMerlinApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evgeny-Fedorov.LeroyMerlinApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CDB07DB262CBF4900304EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A706D19E05D3B735BB256B31 /* Pods-LeroyMerlinApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeroyMerlinApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evgeny-Fedorov.LeroyMerlinApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CDB07DD262CBF4900304EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B6706B3225E4F955AEED63 /* Pods-LeroyMerlinAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeroyMerlinAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evgeny-Fedorov.LeroyMerlinAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeroyMerlinApp.app/LeroyMerlinApp";
+			};
+			name = Debug;
+		};
+		5CDB07DE262CBF4900304EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9F8D1D4812C5A332553A79 /* Pods-LeroyMerlinAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeroyMerlinAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evgeny-Fedorov.LeroyMerlinAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeroyMerlinApp.app/LeroyMerlinApp";
+			};
+			name = Release;
+		};
+		5CDB07E0262CBF4900304EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BDC6BD174BC6ECD5B57343 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeroyMerlinAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evgeny-Fedorov.LeroyMerlinAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeroyMerlinApp;
+			};
+			name = Debug;
+		};
+		5CDB07E1262CBF4900304EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BB4B22BB5CB2555078A286 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeroyMerlinAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Evgeny-Fedorov.LeroyMerlinAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeroyMerlinApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CDB07A7262CBF4600304EBF /* Build configuration list for PBXProject "LeroyMerlinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDB07D7262CBF4900304EBF /* Debug */,
+				5CDB07D8262CBF4900304EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CDB07D9262CBF4900304EBF /* Build configuration list for PBXNativeTarget "LeroyMerlinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDB07DA262CBF4900304EBF /* Debug */,
+				5CDB07DB262CBF4900304EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CDB07DC262CBF4900304EBF /* Build configuration list for PBXNativeTarget "LeroyMerlinAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDB07DD262CBF4900304EBF /* Debug */,
+				5CDB07DE262CBF4900304EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CDB07DF262CBF4900304EBF /* Build configuration list for PBXNativeTarget "LeroyMerlinAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDB07E0262CBF4900304EBF /* Debug */,
+				5CDB07E1262CBF4900304EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CDB07B8262CBF4600304EBF /* LeroyMerlinApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CDB07B9262CBF4600304EBF /* LeroyMerlinApp.xcdatamodel */,
+			);
+			currentVersion = 5CDB07B9262CBF4600304EBF /* LeroyMerlinApp.xcdatamodel */;
+			path = LeroyMerlinApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5CDB07A4262CBF4600304EBF /* Project object */;
+}

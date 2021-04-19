@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09D767E9F21BD702D17BD78FFFDF0AB8 /* Pods-LeroyMerlinApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 440DFEA48214312405CC41D4EDBF3F00 /* Pods-LeroyMerlinApp-dummy.m */; };
+		0D24FEFEF4298905C4AE3E9FC22DBC38 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53090B7B9F2DA5A542B6E0B2472A6E8A /* TinyConstraints.swift */; };
+		1948A866D85CD4319B609B6D9E4A6314 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A584DFB4C236A10F9FC20080C3838 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-dummy.m */; };
+		46B8B56E21A099DD8D60E494D5E1EFDB /* Pods-LeroyMerlinAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2F54EBC435E55912322B161ABC15CB /* Pods-LeroyMerlinAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59FEB7DE195267AD1FB56B2AE69B86D4 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C01E31BA56B750BA0F2FD99DCA4FDDF4 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AE15E0C1FA469F7BFF7C5575BCFCED5 /* Pods-LeroyMerlinAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C4FBDEF90E663C01E4E0CC7C02019B /* Pods-LeroyMerlinAppTests-dummy.m */; };
+		602071FBBC9CE2E7E138D4B67223D4A9 /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A6777BC9B18328AE9BE85C5CF8D00 /* TinyConstraints-dummy.m */; };
+		6652F3665DAADBDC6D8247763F84EBA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		77105C93B5F298996EC54E57FD38D1E0 /* Pods-LeroyMerlinApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 766CD838A87F1606E505F0AC7D29181A /* Pods-LeroyMerlinApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F686C87FC60238F640B1973302B6D08 /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C29655FF0056FD25EC57F7909547C21E /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C64F8B50FDB2E25A939480C3FEC43A /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C237044053DBA8B68378C6F80F10A1 /* TinyConstraints+superview.swift */; };
+		86B66D74317DE0BB6D6E9F5245B6D3A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CBF8630B51B556B1D93FF064C433A66E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09FE24794B2ED4575096B2F66BA5CC9 /* Constraints.swift */; };
+		CCAEE4BF0C676D5173590E04D29BAE92 /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78051CAF65CCFDC2B674F3ABC68C4607 /* TinyEdgeInsets.swift */; };
+		CFF984D0BDE08492C60CC2D9C75E2C96 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BF895255A9365BC69CAD063F1C0B4 /* Abstraction.swift */; };
+		DF7A6BC0D371FF7ECA74781F562C475F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CF0EFA80D02F8C35745900DA3F45FF /* Stack.swift */; };
+		EAAE3CFD5FD7C605478DE7EE72FCBA2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EAB56C7B2652650A976538B12FBAC59D /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A2DF43C3E5A1D1E9A559D9F154D5D4 /* Constrainable.swift */; };
+		F79186B54DDA8143582EE192BA831A31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DD92490915CD8C6FEA911540E7F12E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
+		};
+		9D9D4C34B6000D2C448DC01BC97D6422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
+		};
+		A1A08AD4CF527C81FF83D3A87D521713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17779C2DD68E34D76D02C143C8657B99;
+			remoteInfo = "Pods-LeroyMerlinApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12924E43CFB37E7004F3CE2495ED739B /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		13CF0EFA80D02F8C35745900DA3F45FF /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
+		1BDCE8EBDE83D668FD3F787B13F205AE /* Pods-LeroyMerlinApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeroyMerlinApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		1BF03D2133CA6AF04040A63DA34C3F57 /* TinyConstraints-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinyConstraints-Info.plist"; sourceTree = "<group>"; };
+		1D85C8C079DD531B104B9222B77AF995 /* Pods-LeroyMerlinApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeroyMerlinApp.release.xcconfig"; sourceTree = "<group>"; };
+		248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C5A7A34282932064D3F3E64FD93EFF /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		4016D8B06F73E04E4C91952740B8D80B /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		40A2DF43C3E5A1D1E9A559D9F154D5D4 /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		440DFEA48214312405CC41D4EDBF3F00 /* Pods-LeroyMerlinApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeroyMerlinApp-dummy.m"; sourceTree = "<group>"; };
+		4B8B6436D376E2A27812F3BD5E79323F /* Pods-LeroyMerlinAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeroyMerlinAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D4A584DFB4C236A10F9FC20080C3838 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests-dummy.m"; sourceTree = "<group>"; };
+		53090B7B9F2DA5A542B6E0B2472A6E8A /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+		5EB252E01627A02FBE11E58C2E2CB568 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6888CE2D1DBC0AD08EC64C9868DE0909 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		71243B3F1C89C667C61DBC3A61ADA5D7 /* Pods-LeroyMerlinApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeroyMerlinApp.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		766CD838A87F1606E505F0AC7D29181A /* Pods-LeroyMerlinApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeroyMerlinApp-umbrella.h"; sourceTree = "<group>"; };
+		77681997D2701AE338AAEEC1786A532C /* Pods-LeroyMerlinAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeroyMerlinAppTests.modulemap"; sourceTree = "<group>"; };
+		78051CAF65CCFDC2B674F3ABC68C4607 /* TinyEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyEdgeInsets.swift; path = TinyConstraints/Classes/TinyEdgeInsets.swift; sourceTree = "<group>"; };
+		7D2BF895255A9365BC69CAD063F1C0B4 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
+		86C4FBDEF90E663C01E4E0CC7C02019B /* Pods-LeroyMerlinAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeroyMerlinAppTests-dummy.m"; sourceTree = "<group>"; };
+		8F4D4C9BF0C38B3D8B92A86F294D5D11 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A05E2C51EDF72F72D7B98F117186DB63 /* Pods-LeroyMerlinAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeroyMerlinAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A45B26EABC2A78ED5C55C689F29BEE15 /* Pods_LeroyMerlinApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LeroyMerlinApp.framework; path = "Pods-LeroyMerlinApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52CFA69FA785B166CC4BE06499C9264 /* Pods_LeroyMerlinAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LeroyMerlinAppTests.framework; path = "Pods-LeroyMerlinAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44AB1FF2A3ABC902AC22A0A784FF218 /* Pods-LeroyMerlinApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeroyMerlinApp-Info.plist"; sourceTree = "<group>"; };
+		B8FD986D0EEE0B2FFB3ADF65782ECF34 /* Pods-LeroyMerlinApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeroyMerlinApp-frameworks.sh"; sourceTree = "<group>"; };
+		BFE2FED9E5E9AC54EDA0E6C44E8B1755 /* TinyConstraints.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.release.xcconfig; sourceTree = "<group>"; };
+		C01E31BA56B750BA0F2FD99DCA4FDDF4 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		C09FE24794B2ED4575096B2F66BA5CC9 /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
+		C29655FF0056FD25EC57F7909547C21E /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		C6C237044053DBA8B68378C6F80F10A1 /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
+		D14B8BA2E491A6DE3EEBB46DF34D90D4 /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
+		D77A6777BC9B18328AE9BE85C5CF8D00 /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
+		D7B83868EECA1EC0CDB57EE21CE55545 /* Pods-LeroyMerlinAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeroyMerlinAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8C4F46CA892C5BBC26B85050F2C69E4 /* Pods-LeroyMerlinApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeroyMerlinApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DFDAA240DCF86386310DD0CEBBD8A78C /* Pods-LeroyMerlinAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeroyMerlinAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0B1F1C2CE4D7AC15C121104176E3DF0 /* Pods-LeroyMerlinAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeroyMerlinAppTests-Info.plist"; sourceTree = "<group>"; };
+		E2FA366B3A237BDC036A9F3CE1E09206 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests.modulemap"; sourceTree = "<group>"; };
+		E575D02935E1BC8B27185E1A4B32A3D9 /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E27C1634FB36D16B17E42A64881B91 /* TinyConstraints.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.debug.xcconfig; sourceTree = "<group>"; };
+		EB2F54EBC435E55912322B161ABC15CB /* Pods-LeroyMerlinAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeroyMerlinAppTests-umbrella.h"; sourceTree = "<group>"; };
+		EE22F149EAF5316E8411B4C6D73D5C29 /* Pods-LeroyMerlinApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeroyMerlinApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2A8D9BC4A74F5EEAA679C017D2B1AC9 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36535A7B888AFE58F76BDA6B07CEB9C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE3CFD5FD7C605478DE7EE72FCBA2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9B5398AE03B2C92A818E88ED3537D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6652F3665DAADBDC6D8247763F84EBA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA13BB8CEDD28580CFAD11F405A95A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79186B54DDA8143582EE192BA831A31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1E8B624D2E634A52907A94BC593ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B66D74317DE0BB6D6E9F5245B6D3A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C21D1500F97ABCDB2E47E2282C88E93 /* Pods-LeroyMerlinAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				77681997D2701AE338AAEEC1786A532C /* Pods-LeroyMerlinAppTests.modulemap */,
+				A05E2C51EDF72F72D7B98F117186DB63 /* Pods-LeroyMerlinAppTests-acknowledgements.markdown */,
+				4B8B6436D376E2A27812F3BD5E79323F /* Pods-LeroyMerlinAppTests-acknowledgements.plist */,
+				86C4FBDEF90E663C01E4E0CC7C02019B /* Pods-LeroyMerlinAppTests-dummy.m */,
+				E0B1F1C2CE4D7AC15C121104176E3DF0 /* Pods-LeroyMerlinAppTests-Info.plist */,
+				EB2F54EBC435E55912322B161ABC15CB /* Pods-LeroyMerlinAppTests-umbrella.h */,
+				D7B83868EECA1EC0CDB57EE21CE55545 /* Pods-LeroyMerlinAppTests.debug.xcconfig */,
+				DFDAA240DCF86386310DD0CEBBD8A78C /* Pods-LeroyMerlinAppTests.release.xcconfig */,
+			);
+			name = "Pods-LeroyMerlinAppTests";
+			path = "Target Support Files/Pods-LeroyMerlinAppTests";
+			sourceTree = "<group>";
+		};
+		46DEAE51BE0649D63AA32AED5D602A11 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A73587BDB6D0FF782FD10FCB3115FBCE /* Pods-LeroyMerlinApp */,
+				97AC93E13A4AE6BFB8462D51DC163AF3 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests */,
+				1C21D1500F97ABCDB2E47E2282C88E93 /* Pods-LeroyMerlinAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		66F7B86CE8FCF1C7A66B95E3D03A19DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37C5A7A34282932064D3F3E64FD93EFF /* TinyConstraints.modulemap */,
+				D77A6777BC9B18328AE9BE85C5CF8D00 /* TinyConstraints-dummy.m */,
+				1BF03D2133CA6AF04040A63DA34C3F57 /* TinyConstraints-Info.plist */,
+				D14B8BA2E491A6DE3EEBB46DF34D90D4 /* TinyConstraints-prefix.pch */,
+				C29655FF0056FD25EC57F7909547C21E /* TinyConstraints-umbrella.h */,
+				E5E27C1634FB36D16B17E42A64881B91 /* TinyConstraints.debug.xcconfig */,
+				BFE2FED9E5E9AC54EDA0E6C44E8B1755 /* TinyConstraints.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TinyConstraints";
+			sourceTree = "<group>";
+		};
+		6ABEEA7AE8070D3C9261B4662AC5A6F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA51ADCB66A7E8EED3331ECA1D6C58FC /* TinyConstraints */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97AC93E13A4AE6BFB8462D51DC163AF3 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FA366B3A237BDC036A9F3CE1E09206 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.modulemap */,
+				6888CE2D1DBC0AD08EC64C9868DE0909 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-acknowledgements.markdown */,
+				8F4D4C9BF0C38B3D8B92A86F294D5D11 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-acknowledgements.plist */,
+				4D4A584DFB4C236A10F9FC20080C3838 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-dummy.m */,
+				4016D8B06F73E04E4C91952740B8D80B /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-frameworks.sh */,
+				F2A8D9BC4A74F5EEAA679C017D2B1AC9 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-Info.plist */,
+				C01E31BA56B750BA0F2FD99DCA4FDDF4 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-umbrella.h */,
+				12924E43CFB37E7004F3CE2495ED739B /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig */,
+				5EB252E01627A02FBE11E58C2E2CB568 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig */,
+			);
+			name = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests";
+			path = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests";
+			sourceTree = "<group>";
+		};
+		A73587BDB6D0FF782FD10FCB3115FBCE /* Pods-LeroyMerlinApp */ = {
+			isa = PBXGroup;
+			children = (
+				71243B3F1C89C667C61DBC3A61ADA5D7 /* Pods-LeroyMerlinApp.modulemap */,
+				EE22F149EAF5316E8411B4C6D73D5C29 /* Pods-LeroyMerlinApp-acknowledgements.markdown */,
+				1BDCE8EBDE83D668FD3F787B13F205AE /* Pods-LeroyMerlinApp-acknowledgements.plist */,
+				440DFEA48214312405CC41D4EDBF3F00 /* Pods-LeroyMerlinApp-dummy.m */,
+				B8FD986D0EEE0B2FFB3ADF65782ECF34 /* Pods-LeroyMerlinApp-frameworks.sh */,
+				B44AB1FF2A3ABC902AC22A0A784FF218 /* Pods-LeroyMerlinApp-Info.plist */,
+				766CD838A87F1606E505F0AC7D29181A /* Pods-LeroyMerlinApp-umbrella.h */,
+				D8C4F46CA892C5BBC26B85050F2C69E4 /* Pods-LeroyMerlinApp.debug.xcconfig */,
+				1D85C8C079DD531B104B9222B77AF995 /* Pods-LeroyMerlinApp.release.xcconfig */,
+			);
+			name = "Pods-LeroyMerlinApp";
+			path = "Target Support Files/Pods-LeroyMerlinApp";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6ABEEA7AE8070D3C9261B4662AC5A6F2 /* Pods */,
+				F9F8B71EE087CCCA9346A42A1CD067C8 /* Products */,
+				46DEAE51BE0649D63AA32AED5D602A11 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA51ADCB66A7E8EED3331ECA1D6C58FC /* TinyConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				7D2BF895255A9365BC69CAD063F1C0B4 /* Abstraction.swift */,
+				40A2DF43C3E5A1D1E9A559D9F154D5D4 /* Constrainable.swift */,
+				C09FE24794B2ED4575096B2F66BA5CC9 /* Constraints.swift */,
+				13CF0EFA80D02F8C35745900DA3F45FF /* Stack.swift */,
+				53090B7B9F2DA5A542B6E0B2472A6E8A /* TinyConstraints.swift */,
+				C6C237044053DBA8B68378C6F80F10A1 /* TinyConstraints+superview.swift */,
+				78051CAF65CCFDC2B674F3ABC68C4607 /* TinyEdgeInsets.swift */,
+				66F7B86CE8FCF1C7A66B95E3D03A19DD /* Support Files */,
+			);
+			name = TinyConstraints;
+			path = TinyConstraints;
+			sourceTree = "<group>";
+		};
+		F9F8B71EE087CCCA9346A42A1CD067C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A45B26EABC2A78ED5C55C689F29BEE15 /* Pods_LeroyMerlinApp.framework */,
+				E575D02935E1BC8B27185E1A4B32A3D9 /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework */,
+				A52CFA69FA785B166CC4BE06499C9264 /* Pods_LeroyMerlinAppTests.framework */,
+				248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26765B2900920B51A0E911CCB1E03DCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59FEB7DE195267AD1FB56B2AE69B86D4 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FE3D0A640F390EA7AEA8E88F47DEDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F686C87FC60238F640B1973302B6D08 /* TinyConstraints-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBAF1ED7436252AB39ABD8F9EE98F071 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77105C93B5F298996EC54E57FD38D1E0 /* Pods-LeroyMerlinApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD917F88DB52B44C4863F4E19E4D8506 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B8B56E21A099DD8D60E494D5E1EFDB /* Pods-LeroyMerlinAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17779C2DD68E34D76D02C143C8657B99 /* Pods-LeroyMerlinApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747F4BD4CBB045EF76C0D7F28B12D4D4 /* Build configuration list for PBXNativeTarget "Pods-LeroyMerlinApp" */;
+			buildPhases = (
+				FBAF1ED7436252AB39ABD8F9EE98F071 /* Headers */,
+				659B3F1B56AFA8F07F3E250AB1983EF4 /* Sources */,
+				3A9B5398AE03B2C92A818E88ED3537D7 /* Frameworks */,
+				CC78F6F96E1B7DDFD8181499D723588A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				854C0717D53C172459C055396C8D79D5 /* PBXTargetDependency */,
+			);
+			name = "Pods-LeroyMerlinApp";
+			productName = "Pods-LeroyMerlinApp";
+			productReference = A45B26EABC2A78ED5C55C689F29BEE15 /* Pods_LeroyMerlinApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED162CA822CAFF9F3B82904FBA2988C /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
+			buildPhases = (
+				98FE3D0A640F390EA7AEA8E88F47DEDA /* Headers */,
+				B22F16F1C73358E59AE260C86E3D1F1D /* Sources */,
+				36535A7B888AFE58F76BDA6B07CEB9C6 /* Frameworks */,
+				7465A1319E37DADA12A8BAEB409143AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyConstraints;
+			productName = TinyConstraints;
+			productReference = 248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A7DADD65A36F9F0BB1743B1BC5E6761 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02A6822CD586F80706D2188EFBDFB52C /* Build configuration list for PBXNativeTarget "Pods-LeroyMerlinApp-LeroyMerlinAppUITests" */;
+			buildPhases = (
+				26765B2900920B51A0E911CCB1E03DCB /* Headers */,
+				ED0AAB7146D6A5C206FB8C90E5A5E4DB /* Sources */,
+				7D1E8B624D2E634A52907A94BC593ED0 /* Frameworks */,
+				9FC1B17AD3FFA8C198A2FC98A8D0B5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE1ED6AC8BA6817EA8EE8BE3F47D1C2E /* PBXTargetDependency */,
+			);
+			name = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests";
+			productName = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests";
+			productReference = E575D02935E1BC8B27185E1A4B32A3D9 /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F446AEB65165251FF152EAE56238ED0C /* Pods-LeroyMerlinAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1093D981B8EAD6AB0CD95B97644F26DB /* Build configuration list for PBXNativeTarget "Pods-LeroyMerlinAppTests" */;
+			buildPhases = (
+				FD917F88DB52B44C4863F4E19E4D8506 /* Headers */,
+				BF6B72159A21B54FBD27E0E8FDC903B2 /* Sources */,
+				4EA13BB8CEDD28580CFAD11F405A95A3 /* Frameworks */,
+				1761F39C4F816FCDD1ED5BE2CF908779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2875563017382419C538BAE5F6E8BB9E /* PBXTargetDependency */,
+			);
+			name = "Pods-LeroyMerlinAppTests";
+			productName = "Pods-LeroyMerlinAppTests";
+			productReference = A52CFA69FA785B166CC4BE06499C9264 /* Pods_LeroyMerlinAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F9F8B71EE087CCCA9346A42A1CD067C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17779C2DD68E34D76D02C143C8657B99 /* Pods-LeroyMerlinApp */,
+				8A7DADD65A36F9F0BB1743B1BC5E6761 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests */,
+				F446AEB65165251FF152EAE56238ED0C /* Pods-LeroyMerlinAppTests */,
+				45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1761F39C4F816FCDD1ED5BE2CF908779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7465A1319E37DADA12A8BAEB409143AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC1B17AD3FFA8C198A2FC98A8D0B5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC78F6F96E1B7DDFD8181499D723588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		659B3F1B56AFA8F07F3E250AB1983EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D767E9F21BD702D17BD78FFFDF0AB8 /* Pods-LeroyMerlinApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22F16F1C73358E59AE260C86E3D1F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF984D0BDE08492C60CC2D9C75E2C96 /* Abstraction.swift in Sources */,
+				EAB56C7B2652650A976538B12FBAC59D /* Constrainable.swift in Sources */,
+				CBF8630B51B556B1D93FF064C433A66E /* Constraints.swift in Sources */,
+				DF7A6BC0D371FF7ECA74781F562C475F /* Stack.swift in Sources */,
+				80C64F8B50FDB2E25A939480C3FEC43A /* TinyConstraints+superview.swift in Sources */,
+				602071FBBC9CE2E7E138D4B67223D4A9 /* TinyConstraints-dummy.m in Sources */,
+				0D24FEFEF4298905C4AE3E9FC22DBC38 /* TinyConstraints.swift in Sources */,
+				CCAEE4BF0C676D5173590E04D29BAE92 /* TinyEdgeInsets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6B72159A21B54FBD27E0E8FDC903B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE15E0C1FA469F7BFF7C5575BCFCED5 /* Pods-LeroyMerlinAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED0AAB7146D6A5C206FB8C90E5A5E4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1948A866D85CD4319B609B6D9E4A6314 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2875563017382419C538BAE5F6E8BB9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LeroyMerlinApp";
+			target = 17779C2DD68E34D76D02C143C8657B99 /* Pods-LeroyMerlinApp */;
+			targetProxy = A1A08AD4CF527C81FF83D3A87D521713 /* PBXContainerItemProxy */;
+		};
+		854C0717D53C172459C055396C8D79D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = 6DD92490915CD8C6FEA911540E7F12E0 /* PBXContainerItemProxy */;
+		};
+		CE1ED6AC8BA6817EA8EE8BE3F47D1C2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = 9D9D4C34B6000D2C448DC01BC97D6422 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FC1F0034542601DF1F5A76D5F10376C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E27C1634FB36D16B17E42A64881B91 /* TinyConstraints.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E01F9E5960B84DA30CCBF8E90163092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B83868EECA1EC0CDB57EE21CE55545 /* Pods-LeroyMerlinAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeroyMerlinAppTests/Pods-LeroyMerlinAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeroyMerlinAppTests/Pods-LeroyMerlinAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B7165CE72FA0260993EC86E2AC48993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE2FED9E5E9AC54EDA0E6C44E8B1755 /* TinyConstraints.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		489823C93E31FAF30C46FE043C6E9D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDAA240DCF86386310DD0CEBBD8A78C /* Pods-LeroyMerlinAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeroyMerlinAppTests/Pods-LeroyMerlinAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeroyMerlinAppTests/Pods-LeroyMerlinAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A45A4436AEF82A5579495D7E926C726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C4F46CA892C5BBC26B85050F2C69E4 /* Pods-LeroyMerlinApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5BEB1DAC7620C6E50A0C6DEA2D94131D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12924E43CFB37E7004F3CE2495ED739B /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7F8D6EC047EA6006AED7B8A2E0BCBBAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB252E01627A02FBE11E58C2E2CB568 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7DAF8C1194A8432DF90AB8FDAE92B5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D85C8C079DD531B104B9222B77AF995 /* Pods-LeroyMerlinApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02A6822CD586F80706D2188EFBDFB52C /* Build configuration list for PBXNativeTarget "Pods-LeroyMerlinApp-LeroyMerlinAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BEB1DAC7620C6E50A0C6DEA2D94131D /* Debug */,
+				7F8D6EC047EA6006AED7B8A2E0BCBBAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1093D981B8EAD6AB0CD95B97644F26DB /* Build configuration list for PBXNativeTarget "Pods-LeroyMerlinAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E01F9E5960B84DA30CCBF8E90163092 /* Debug */,
+				489823C93E31FAF30C46FE043C6E9D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747F4BD4CBB045EF76C0D7F28B12D4D4 /* Build configuration list for PBXNativeTarget "Pods-LeroyMerlinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A45A4436AEF82A5579495D7E926C726 /* Debug */,
+				F7DAF8C1194A8432DF90AB8FDAE92B5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED162CA822CAFF9F3B82904FBA2988C /* Build configuration list for PBXNativeTarget "TinyConstraints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FC1F0034542601DF1F5A76D5F10376C /* Debug */,
+				3B7165CE72FA0260993EC86E2AC48993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
