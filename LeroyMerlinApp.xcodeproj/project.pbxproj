@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		39983B021EB605DD64A24470 /* Pods_LeroyMerlinApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A06CC7A506B6393AD7FC7C /* Pods_LeroyMerlinApp.framework */; };
-		5C18BB59262DFA5A00402F07 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18BB58262DFA5A00402F07 /* BottomBar.swift */; };
-		5C18BB5E262E0FEF00402F07 /* ViewForButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C18BB5D262E0FEF00402F07 /* ViewForButtons.swift */; };
+		5C6BBC60263204DA00F8DEFA /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BBC5F263204DA00F8DEFA /* CatalogCell.swift */; };
+		5C6BBC682632095200F8DEFA /* CellToAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BBC672632095200F8DEFA /* CellToAll.swift */; };
+		5C6BBC79263214E000F8DEFA /* CatalogArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BBC78263214E000F8DEFA /* CatalogArray.swift */; };
+		5C6BBC85263223B900F8DEFA /* BestArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BBC84263223B900F8DEFA /* BestArray.swift */; };
+		5C6BBC8D2632258B00F8DEFA /* LimitedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BBC8C2632258B00F8DEFA /* LimitedArray.swift */; };
+		5C6BBC922632426900F8DEFA /* PopularRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6BBC912632426900F8DEFA /* PopularRequests.swift */; };
+		5C7C743F26305B5A00A60F94 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C743E26305B5A00A60F94 /* TabBarController.swift */; };
 		5CDB07B0262CBF4600304EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07AF262CBF4600304EBF /* AppDelegate.swift */; };
 		5CDB07B2262CBF4600304EBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07B1262CBF4600304EBF /* SceneDelegate.swift */; };
 		5CDB07B4262CBF4600304EBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07B3262CBF4600304EBF /* ViewController.swift */; };
@@ -22,8 +27,10 @@
 		5CDB07E6262CC40F00304EBF /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07E5262CC40F00304EBF /* SearchField.swift */; };
 		5CDB07F6262CC8A700304EBF /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB07F5262CC8A700304EBF /* SearchButton.swift */; };
 		5CDB0801262CDFD800304EBF /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB0800262CDFD800304EBF /* CustomCollectionView.swift */; };
-		5CDB0806262CE10A00304EBF /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB0805262CE10A00304EBF /* CustomCollectionViewCell.swift */; };
-		5CF76404262DF020007FFEFF /* SecondCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76403262DF020007FFEFF /* SecondCustomCollectionViewCell.swift */; };
+		5CDB0806262CE10A00304EBF /* CellWithoutPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB0805262CE10A00304EBF /* CellWithoutPrice.swift */; };
+		5CE56E85262ED94300FBD2EF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE56E84262ED94300FBD2EF /* ContainerViewController.swift */; };
+		5CE56E8A262ED97400FBD2EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE56E89262ED97400FBD2EF /* SearchViewController.swift */; };
+		5CF76404262DF020007FFEFF /* CellWithPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76403262DF020007FFEFF /* CellWithPrice.swift */; };
 		5CF76409262DF05C007FFEFF /* SecondCustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76408262DF05C007FFEFF /* SecondCustomCollectionView.swift */; };
 		CCD60A2268CCF91571488BDE /* Pods_LeroyMerlinAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90B3D5A2128C848AED6174D /* Pods_LeroyMerlinAppTests.framework */; };
 		D993283EA5E1819285145730 /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D14B5794F2EAABF937D904E /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework */; };
@@ -50,8 +57,13 @@
 		0D14B5794F2EAABF937D904E /* Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeroyMerlinApp_LeroyMerlinAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29BDC6BD174BC6ECD5B57343 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59A06CC7A506B6393AD7FC7C /* Pods_LeroyMerlinApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeroyMerlinApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C18BB58262DFA5A00402F07 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
-		5C18BB5D262E0FEF00402F07 /* ViewForButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewForButtons.swift; sourceTree = "<group>"; };
+		5C6BBC5F263204DA00F8DEFA /* CatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
+		5C6BBC672632095200F8DEFA /* CellToAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellToAll.swift; sourceTree = "<group>"; };
+		5C6BBC78263214E000F8DEFA /* CatalogArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogArray.swift; sourceTree = "<group>"; };
+		5C6BBC84263223B900F8DEFA /* BestArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestArray.swift; sourceTree = "<group>"; };
+		5C6BBC8C2632258B00F8DEFA /* LimitedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedArray.swift; sourceTree = "<group>"; };
+		5C6BBC912632426900F8DEFA /* PopularRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRequests.swift; sourceTree = "<group>"; };
+		5C7C743E26305B5A00A60F94 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		5CDB07AC262CBF4600304EBF /* LeroyMerlinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeroyMerlinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CDB07AF262CBF4600304EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CDB07B1262CBF4600304EBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,8 +82,10 @@
 		5CDB07E5262CC40F00304EBF /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		5CDB07F5262CC8A700304EBF /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		5CDB0800262CDFD800304EBF /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
-		5CDB0805262CE10A00304EBF /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
-		5CF76403262DF020007FFEFF /* SecondCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CDB0805262CE10A00304EBF /* CellWithoutPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithoutPrice.swift; sourceTree = "<group>"; };
+		5CE56E84262ED94300FBD2EF /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		5CE56E89262ED97400FBD2EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5CF76403262DF020007FFEFF /* CellWithPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithPrice.swift; sourceTree = "<group>"; };
 		5CF76408262DF05C007FFEFF /* SecondCustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomCollectionView.swift; sourceTree = "<group>"; };
 		67BB4B22BB5CB2555078A286 /* Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinApp-LeroyMerlinAppUITests/Pods-LeroyMerlinApp-LeroyMerlinAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99DB65018D440E6A0E0FC302 /* Pods-LeroyMerlinApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeroyMerlinApp.debug.xcconfig"; path = "Target Support Files/Pods-LeroyMerlinApp/Pods-LeroyMerlinApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +123,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C6BBC83263223A500F8DEFA /* ForTesting */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BBC78263214E000F8DEFA /* CatalogArray.swift */,
+				5C6BBC84263223B900F8DEFA /* BestArray.swift */,
+				5C6BBC8C2632258B00F8DEFA /* LimitedArray.swift */,
+				5C6BBC912632426900F8DEFA /* PopularRequests.swift */,
+			);
+			path = ForTesting;
+			sourceTree = "<group>";
+		};
+		5C7C74462630600400A60F94 /* SearchItems */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB07E5262CC40F00304EBF /* SearchField.swift */,
+				5CDB07F5262CC8A700304EBF /* SearchButton.swift */,
+			);
+			path = SearchItems;
+			sourceTree = "<group>";
+		};
+		5C7C74472630600F00A60F94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C7C74482630601300A60F94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB07B5262CBF4600304EBF /* Main.storyboard */,
+				5CDB07BD262CBF4900304EBF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C7C74492630601800A60F94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C7456263060BF00A60F94 /* CustomCollection */,
+				5CDB07B3262CBF4600304EBF /* ViewController.swift */,
+				5CE56E84262ED94300FBD2EF /* ContainerViewController.swift */,
+				5C7C743E26305B5A00A60F94 /* TabBarController.swift */,
+				5C7C74512630606B00A60F94 /* SearchViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C7C744A2630602400A60F94 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB07AF262CBF4600304EBF /* AppDelegate.swift */,
+				5CDB07B1262CBF4600304EBF /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5C7C74512630606B00A60F94 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5CE56E89262ED97400FBD2EF /* SearchViewController.swift */,
+				5C7C74462630600400A60F94 /* SearchItems */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		5C7C7455263060AC00A60F94 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BBC5F263204DA00F8DEFA /* CatalogCell.swift */,
+				5CDB0805262CE10A00304EBF /* CellWithoutPrice.swift */,
+				5C6BBC672632095200F8DEFA /* CellToAll.swift */,
+				5CF76403262DF020007FFEFF /* CellWithPrice.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		5C7C7456263060BF00A60F94 /* CustomCollection */ = {
+			isa = PBXGroup;
+			children = (
+				5C6BBC83263223A500F8DEFA /* ForTesting */,
+				5C7C7455263060AC00A60F94 /* CustomCells */,
+				5CF76408262DF05C007FFEFF /* SecondCustomCollectionView.swift */,
+				5CDB0800262CDFD800304EBF /* CustomCollectionView.swift */,
+			);
+			path = CustomCollection;
+			sourceTree = "<group>";
+		};
 		5CDB07A3262CBF4600304EBF = {
 			isa = PBXGroup;
 			children = (
@@ -134,22 +236,13 @@
 		5CDB07AE262CBF4600304EBF /* LeroyMerlinApp */ = {
 			isa = PBXGroup;
 			children = (
-				5CDB07E5262CC40F00304EBF /* SearchField.swift */,
-				5CDB07F5262CC8A700304EBF /* SearchButton.swift */,
-				5CDB07AF262CBF4600304EBF /* AppDelegate.swift */,
-				5CDB07B1262CBF4600304EBF /* SceneDelegate.swift */,
-				5CDB07B3262CBF4600304EBF /* ViewController.swift */,
-				5CDB07B5262CBF4600304EBF /* Main.storyboard */,
+				5C7C744A2630602400A60F94 /* Application */,
+				5C7C74472630600F00A60F94 /* Model */,
+				5C7C74482630601300A60F94 /* View */,
+				5C7C74492630601800A60F94 /* Controller */,
 				5CDB07BB262CBF4900304EBF /* Assets.xcassets */,
-				5CDB07BD262CBF4900304EBF /* LaunchScreen.storyboard */,
 				5CDB07C0262CBF4900304EBF /* Info.plist */,
 				5CDB07B8262CBF4600304EBF /* LeroyMerlinApp.xcdatamodeld */,
-				5CDB0800262CDFD800304EBF /* CustomCollectionView.swift */,
-				5CDB0805262CE10A00304EBF /* CustomCollectionViewCell.swift */,
-				5CF76403262DF020007FFEFF /* SecondCustomCollectionViewCell.swift */,
-				5CF76408262DF05C007FFEFF /* SecondCustomCollectionView.swift */,
-				5C18BB58262DFA5A00402F07 /* BottomBar.swift */,
-				5C18BB5D262E0FEF00402F07 /* ViewForButtons.swift */,
 			);
 			path = LeroyMerlinApp;
 			sourceTree = "<group>";
@@ -433,18 +526,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C18BB5E262E0FEF00402F07 /* ViewForButtons.swift in Sources */,
 				5CDB07B4262CBF4600304EBF /* ViewController.swift in Sources */,
-				5CF76404262DF020007FFEFF /* SecondCustomCollectionViewCell.swift in Sources */,
+				5CE56E85262ED94300FBD2EF /* ContainerViewController.swift in Sources */,
+				5C6BBC8D2632258B00F8DEFA /* LimitedArray.swift in Sources */,
+				5C7C743F26305B5A00A60F94 /* TabBarController.swift in Sources */,
+				5CF76404262DF020007FFEFF /* CellWithPrice.swift in Sources */,
 				5CF76409262DF05C007FFEFF /* SecondCustomCollectionView.swift in Sources */,
+				5C6BBC85263223B900F8DEFA /* BestArray.swift in Sources */,
+				5C6BBC79263214E000F8DEFA /* CatalogArray.swift in Sources */,
 				5CDB07E6262CC40F00304EBF /* SearchField.swift in Sources */,
 				5CDB07B0262CBF4600304EBF /* AppDelegate.swift in Sources */,
-				5CDB0806262CE10A00304EBF /* CustomCollectionViewCell.swift in Sources */,
+				5CDB0806262CE10A00304EBF /* CellWithoutPrice.swift in Sources */,
+				5CE56E8A262ED97400FBD2EF /* SearchViewController.swift in Sources */,
+				5C6BBC682632095200F8DEFA /* CellToAll.swift in Sources */,
 				5CDB07BA262CBF4600304EBF /* LeroyMerlinApp.xcdatamodeld in Sources */,
+				5C6BBC60263204DA00F8DEFA /* CatalogCell.swift in Sources */,
 				5CDB07B2262CBF4600304EBF /* SceneDelegate.swift in Sources */,
-				5C18BB59262DFA5A00402F07 /* BottomBar.swift in Sources */,
 				5CDB0801262CDFD800304EBF /* CustomCollectionView.swift in Sources */,
 				5CDB07F6262CC8A700304EBF /* SearchButton.swift in Sources */,
+				5C6BBC922632426900F8DEFA /* PopularRequests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
