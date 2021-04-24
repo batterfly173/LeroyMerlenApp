@@ -6,6 +6,7 @@ enum GestureForChangeStateOfSearchBar
     case swipeDown
     case textFieldButtonTapped
     case closeTableViewButtonTapped
+    case tapOnKeyBoardWithSwipeDown
 }
 
 class ContainerViewController: UIViewController, ChangePositionProtocol
@@ -14,7 +15,7 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
     {
         if gesture == .textFieldButtonTapped
         {
-            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options:         .curveEaseOut, animations:
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options:         .curveEaseOut, animations:
             {
                 self.mainViewController.searchTableView.isHidden = false
                 self.mainViewController.mainScrollView.isHidden = true
@@ -25,7 +26,7 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
         {
             self.searchViewController.closeTableViewButton.isHidden = false
             
-            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options:  .curveEaseOut, animations:
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options:  .curveEaseOut, animations:
             {
                 self.searchViewController.searchTextField.frame.origin.x = self.searchViewController.searchTextField.frame.origin.x + 35
             }, completion: nil)
@@ -34,7 +35,7 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
         {
             self.searchViewController.closeTableViewButton.isHidden = true
             
-            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options:  .curveEaseOut, animations:
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options:  .curveEaseOut, animations:
             {
                 self.searchViewController.searchTextField.frame.origin.x = self.searchViewController.searchTextField.frame.origin.x - 35
             }, completion: nil)
@@ -42,7 +43,7 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
         
         if gesture == .swipeUp || gesture == .closeTableViewButtonTapped
         {
-            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options:         .curveEaseOut, animations:
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options:         .curveEaseOut, animations:
             {
                 self.mainViewController.view.frame.origin.y = 200
                 
@@ -59,11 +60,11 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
                 
             }, completion: {_ in self.mainViewController.previousSwipe = .down })
             
-            self.searchViewController.searchBarIsShowFull = true
+            self.searchViewController.isFullShow = true
         }
         else if gesture == .swipeDown || gesture == .textFieldButtonTapped
         {
-            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseOut, animations:
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseOut, animations:
             {
                 self.mainViewController.view.frame.origin.y = 100
                 self.searchViewController.buttonTextField.isHidden = true
@@ -71,17 +72,15 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
                 
                 self.searchViewController.lineShapeLayer.isHidden = false
                 
-                self.searchViewController.view.frame.origin.y = self.searchViewController.view.frame.origin.y - 80
-                
-                /*if self.searchViewController.searchBarIsShowFull
+                if self.searchViewController.isFullShow
                 {
                     self.searchViewController.view.frame.origin.y = self.searchViewController.view.frame.origin.y - 80
-                }*/
+                }
                 
             }, completion: {_ in self.mainViewController.previousSwipe = .up })
+            
+            self.searchViewController.isFullShow = false
         }
-        
-        self.searchViewController.searchBarIsShowFull = false
     }
     
     private(set) var mainViewController: MainViewController!
@@ -102,7 +101,6 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
     
     private func configureMainViewController()
     {
-        
         if searchViewController == nil
         {
             mainViewController = MainViewController()
@@ -121,5 +119,12 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
             view.insertSubview(searchViewController.view, at: 0)
             addChild(searchViewController)
         }
+    }
+    func showDetailController()
+    {
+        let det = DetailController()
+        
+        det.modalPresentationStyle = .fullScreen
+        present(det, animated: false)
     }
 }
