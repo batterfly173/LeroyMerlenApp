@@ -11,6 +11,8 @@ class SearchViewController: UIViewController
     var delegate: ChangePositionProtocol!
     var searchBarIsShowFull = true
     
+    var leadingSpace: NSLayoutConstraint!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -40,7 +42,8 @@ class SearchViewController: UIViewController
         searchTextField.layer.cornerRadius = 5
         searchTextField.layer.borderWidth = 0
         searchTextField.placeholder = "Поиск"
-        searchTextField.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
+        leadingSpace = searchTextField.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20)//.isActive = true
+        leadingSpace.isActive = true
         searchTextField.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
         searchTextField.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 120).isActive = true
         searchTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -84,7 +87,7 @@ class SearchViewController: UIViewController
         closeTableViewButton.imageView.image = UIImage(systemName: "chevron.left", withConfiguration: .none)
         closeTableViewButton.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
        
-        closeTableViewButton.trailingAnchor.constraint(equalTo: searchTextField.leadingAnchor, constant: 20).isActive = true
+        closeTableViewButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
         closeTableViewButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 125).isActive = true
         closeTableViewButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
         closeTableViewButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
@@ -97,14 +100,15 @@ class SearchViewController: UIViewController
     
     @objc func closeTextFieldButtonTapped()
     {
-        searchBarIsShowFull = true
         searchTextField.resignFirstResponder()
         delegate.changeStateOfSearchBar(gesture: GestureForChangeStateOfSearchBar.closeTableViewButtonTapped)
     }
     
     @objc func textFieldButtonTapped()
     {
-        searchBarIsShowFull = false
+        leadingSpace.constant = 55
+        searchTextField.updateConstraints()
+        
         delegate.changeStateOfSearchBar(gesture: GestureForChangeStateOfSearchBar.textFieldButtonTapped)
     }
 
@@ -115,7 +119,6 @@ extension SearchViewController: UITextFieldDelegate
 {
     func textFieldDidBeginEditing(_ textField: UITextField)
     {
-        searchBarIsShowFull = false
         delegate.changeStateOfSearchBar(gesture: GestureForChangeStateOfSearchBar.textFieldButtonTapped)
     }
     

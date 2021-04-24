@@ -71,10 +71,12 @@ class ContainerViewController: UIViewController, ChangePositionProtocol
                 
                 self.searchViewController.lineShapeLayer.isHidden = false
                 
-                if self.searchViewController.searchBarIsShowFull
+                self.searchViewController.view.frame.origin.y = self.searchViewController.view.frame.origin.y - 80
+                
+                /*if self.searchViewController.searchBarIsShowFull
                 {
                     self.searchViewController.view.frame.origin.y = self.searchViewController.view.frame.origin.y - 80
-                }
+                }*/
                 
             }, completion: {_ in self.mainViewController.previousSwipe = .up })
         }
