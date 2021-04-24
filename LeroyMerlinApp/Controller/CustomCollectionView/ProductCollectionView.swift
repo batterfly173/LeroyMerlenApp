@@ -1,18 +1,25 @@
 import UIKit
 import Foundation
 
-class SecondCustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
+enum typeOfProductsInCollection
 {
-    var array = [extendedItem]()
-    init(identificator: Int)
+    case best
+    case limited
+}
+
+class ProductCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
+{
+    private var arrayOfProducts = [extendedItem]()
+    
+    init(typeOfProduct: typeOfProductsInCollection)
     {
-        if identificator == 0
+        if typeOfProduct == .best
         {
-            array = BestArray().items
+            arrayOfProducts = BestArray().items
         }
-        else
+        else if typeOfProduct == .limited
         {
-            array = LimitedArray().items
+            arrayOfProducts = LimitedArray().items
         }
         
         let layout = UICollectionViewFlowLayout()
@@ -27,7 +34,7 @@ class SecondCustomCollectionView: UICollectionView, UICollectionViewDelegate, UI
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return array.count
+        return arrayOfProducts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
@@ -39,14 +46,16 @@ class SecondCustomCollectionView: UICollectionView, UICollectionViewDelegate, UI
     {
         let cell = dequeueReusableCell(withReuseIdentifier: CellWithPrice.reuseID, for: indexPath) as? CellWithPrice
         
-        guard cell != nil else { return UICollectionViewCell()}
-        cell!.descriptionLabel.text = array[indexPath.row].description
-        let str = NSString(format:"%.1f", array[indexPath.row].price!) as String
-        cell!.priceLabel.text = str + " руб/ш"
+        guard let collectionCell = cell else { return UICollectionViewCell()}
         
-        cell?.imageView.image = array[indexPath.row].image
+        collectionCell.descriptionLabel.text = arrayOfProducts[indexPath.row].description
         
-        return cell!
+        let str = NSString(format:"%.1f", arrayOfProducts[indexPath.row].price!) as String
+        collectionCell.priceLabel.text = str + " руб/ш"
+        
+        collectionCell.imageView.image = arrayOfProducts[indexPath.row].image
+        
+        return collectionCell
     }
     
     required init?(coder: NSCoder) {

@@ -8,15 +8,15 @@ enum previousSwipes
 
 protocol ChangePositionProtocol
 {
-    func changePosition(direction: Int)
+    func changeStateOfSearchBar(gesture: GestureForChangeStateOfSearchBar)
 }
 
-class ViewController: UIViewController
+class MainViewController: UIViewController
 {
     var mainScrollView = UIScrollView(frame: UIScreen.main.bounds)
     var delegate: ChangePositionProtocol!
     
-    fileprivate var pS = previousSwipes.down
+    var previousSwipe = previousSwipes.down
     var label = UILabel()
     var label2 = UILabel()
     
@@ -31,17 +31,17 @@ class ViewController: UIViewController
         view.addSubview(mainScrollView)
         mainScrollView.delegate = self
         mainScrollView.showsVerticalScrollIndicator = false
-        mainScrollView.contentSize = CGSize(width: view.frame.width, height: 1000)
+        mainScrollView.contentSize = CGSize(width: view.frame.width, height: 1100)
         
-        let test = CustomCollectionView()
+        let test = CatalogCollectionView()
         test.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         test.showsHorizontalScrollIndicator = false
         
-        let test2 = SecondCustomCollectionView(identificator: 0)
+        let test2 = ProductCollectionView(typeOfProduct: typeOfProductsInCollection.best)
         test2.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         test2.showsHorizontalScrollIndicator = false
         
-        let test3 = SecondCustomCollectionView(identificator: 1)
+        let test3 = ProductCollectionView(typeOfProduct: typeOfProductsInCollection.limited)
         test3.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         test3.showsHorizontalScrollIndicator = false
         
@@ -75,11 +75,12 @@ class ViewController: UIViewController
         searchTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         searchTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         searchTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -280).isActive = true
+        
         searchTableView.isHidden = true
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource
+extension MainViewController: UITableViewDelegate, UITableViewDataSource
 {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -95,27 +96,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        tableView.deselectRow(at: indexPath, animated: true)
+        let det = DetailController()
+        
+        det.modalPresentationStyle = .fullScreen
+        present(det, animated: false)
     }
     
 }
 
-extension ViewController: UIScrollViewDelegate
+extension MainViewController: UIScrollViewDelegate
 {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView)
     {
         guard scrollView == mainScrollView else { return }
         let translation = scrollView.panGestureRecognizer.translation(in: self.view)
         
-        if translation.y < 0 && pS != .up
+        if translation.y < 0 && previousSwipe != .up
         {
-            delegate.changePosition(direction: 0)
-            pS = .up
+            delegate.changeStateOfSearchBar(gesture: GestureForChangeStateOfSearchBar.swipeDown)
         }
-        else if translation.y > 0 && pS != .down
+        else if translation.y > 0 && previousSwipe != .down
         {
-            delegate.changePosition(direction: 1)
-            pS = .down
+            delegate.changeStateOfSearchBar(gesture: GestureForChangeStateOfSearchBar.swipeUp)
         }
     }
 }

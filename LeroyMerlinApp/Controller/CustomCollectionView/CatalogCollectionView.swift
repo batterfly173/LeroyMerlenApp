@@ -1,18 +1,19 @@
 import UIKit
 import Foundation
 
-class CustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
+class CatalogCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 {
     init()
     {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        
         super.init(frame: .zero, collectionViewLayout: layout)
      
         delegate = self
         dataSource = self
         
-        register(CellWithoutPrice.self, forCellWithReuseIdentifier: CellWithoutPrice.reuseID)
+        register(CellWithGroup.self, forCellWithReuseIdentifier: CellWithGroup.reuseID)
         
         register(CatalogCell.self, forCellWithReuseIdentifier: CatalogCell.reuseID)
         
@@ -21,7 +22,7 @@ class CustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return CatalogArray().items.count + 2
+        return CatalogArray.itemsForCatalog.count + 2
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
@@ -35,20 +36,20 @@ class CustomCollectionView: UICollectionView, UICollectionViewDelegate, UICollec
         {
             return dequeueReusableCell(withReuseIdentifier: CatalogCell.reuseID, for: indexPath)
         }
-        else if indexPath.row == 6
+        else if indexPath.row == CatalogArray.itemsForCatalog.count + 1
         {
             return dequeueReusableCell(withReuseIdentifier: CellToAll.reuseID, for: indexPath)
         }
         else
         {
-            let cell = dequeueReusableCell(withReuseIdentifier: CellWithoutPrice.reuseID, for: indexPath) as? CellWithoutPrice
+            let cell = dequeueReusableCell(withReuseIdentifier: CellWithGroup.reuseID, for: indexPath) as? CellWithGroup
             
-            guard cell != nil else { return UICollectionViewCell()}
+            guard let collectionCell = cell else { return UICollectionViewCell()}
             
-            cell?.label.text = CatalogArray().items[indexPath.row - 1].name
-            cell?.imageView.image = CatalogArray().items[indexPath.row - 1].image
+            collectionCell.label.text = CatalogArray.itemsForCatalog[indexPath.row - 1].name
+            collectionCell.imageView.image = CatalogArray.itemsForCatalog[indexPath.row - 1].image
             
-            return cell!
+            return collectionCell
         }
     }
     

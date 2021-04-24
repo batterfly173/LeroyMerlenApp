@@ -2,9 +2,9 @@ import Foundation
 import UIKit
 
 
-class CellWithoutPrice: UICollectionViewCell
+class CellWithGroup: UICollectionViewCell
 {
-    static let reuseID = "CellWithoutPrice"
+    static let reuseID = "CellWithGroup"
     var label = UILabel()
     var imageView = UIImageView()
     

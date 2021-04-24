@@ -9,7 +9,7 @@ struct item
 
 class CatalogArray
 {
-    private(set) var items = [item(name: "Сад", image: UIImage(named: "flower")),
+   static var itemsForCatalog = [item(name: "Сад", image: UIImage(named: "flower")),
                               item(name: "Освещение", image: UIImage(named: "lustra")),
                               item(name: "Инструменты", image: UIImage(named: "drel")),
                               item(name: "Стройматериалы", image: UIImage(named: "kirpich")),
