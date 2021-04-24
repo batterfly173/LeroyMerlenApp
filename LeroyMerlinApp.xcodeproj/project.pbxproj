@@ -190,11 +190,8 @@
 			children = (
 				5C7C743E26305B5A00A60F94 /* TabBarController.swift */,
 				5CE56E84262ED94300FBD2EF /* ContainerViewController.swift */,
-				5CDB07B3262CBF4600304EBF /* MainViewController.swift */,
-				5C9846382634AC4C00D21F9F /* ExtensionOfMainView */,
+				5C9846642634B49A00D21F9F /* MainController */,
 				5C7C74512630606B00A60F94 /* SearchViewController */,
-				5C7C7456263060BF00A60F94 /* CustomCollectionView */,
-				5CB5A61F26344BF90030BB0B /* CustomView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +211,7 @@
 				5CE56E89262ED97400FBD2EF /* SearchViewController.swift */,
 				5C9846512634B16900D21F9F /* ExtensionsOfSearch */,
 				5C7C74462630600400A60F94 /* SearchItems */,
+				5CB5A61F26344BF90030BB0B /* CustomView.swift */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
@@ -259,6 +257,16 @@
 				5C98465F2634B2D800D21F9F /* TargetsExtension.swift */,
 			);
 			path = ExtensionsOfSearch;
+			sourceTree = "<group>";
+		};
+		5C9846642634B49A00D21F9F /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB07B3262CBF4600304EBF /* MainViewController.swift */,
+				5C9846382634AC4C00D21F9F /* ExtensionOfMainView */,
+				5C7C7456263060BF00A60F94 /* CustomCollectionView */,
+			);
+			path = MainController;
 			sourceTree = "<group>";
 		};
 		5CB5A5E0263436610030BB0B /* OtherControllers */ = {

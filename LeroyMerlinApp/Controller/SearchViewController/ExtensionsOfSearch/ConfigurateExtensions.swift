@@ -16,8 +16,8 @@ extension SearchViewController
         closeTableViewButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
         closeTableViewButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
-        let tap2 = UITapGestureRecognizer(target: self, action: #selector(closeTextFieldButtonTapped))
-        closeTableViewButton.addGestureRecognizer(tap2)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(closeTextFieldButtonTapped))
+        closeTableViewButton.addGestureRecognizer(tap)
 
         closeTableViewButton.isHidden = true
     }
@@ -36,8 +36,8 @@ extension SearchViewController
         buttonTextField.bottomAnchor.constraint(equalTo: searchTextField.bottomAnchor, constant: -5).isActive = true
         buttonTextField.widthAnchor.constraint(equalToConstant: 60).isActive = true
         
-        let tap1 = UITapGestureRecognizer(target: self, action: #selector(textFieldButtonTapped))
-        buttonTextField.addGestureRecognizer(tap1)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(textFieldButtonTapped))
+        buttonTextField.addGestureRecognizer(tap)
     }
     
     func configurateLine()
